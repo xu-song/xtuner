@@ -107,7 +107,7 @@ def load_jsonl_dataset(data_files=None, data_dir=None, suffix=None):
     return dataset
 
 
-def tokenize(pair: str,
+def tokenize(pair: dict,
              tokenizer: AutoTokenizer,
              max_length: int,
              is_reward: bool = False,
